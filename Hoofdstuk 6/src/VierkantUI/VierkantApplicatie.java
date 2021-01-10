@@ -6,12 +6,13 @@ import Vierkant.Vierkant;
 
 public class VierkantApplicatie {
 
+	static Scanner input = new Scanner(System.in);
+	
 	public static void main(String[] args) {
 		int xCoor = 0;
 		int yCoor = 0;
 		int lengte = 0;
 		
-		Scanner input = new Scanner(System.in);
 		System.out.print("Geef de x-coordinaat van de linkerbovenhoek in: ");
 		xCoor = input.nextInt();
 		System.out.print("Geef de y-coordinaat van de linkerbovenhoek in: ");
@@ -57,7 +58,6 @@ public class VierkantApplicatie {
 		System.out.println("3) Een nieuwe linkerbovenhoek definieren");
 		System.out.println("4) Applicatie afsluiten");
 		
-		Scanner input = new Scanner(System.in);
 		return input.nextInt();
 	}
 }
